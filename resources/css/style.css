@@ -197,4 +197,10 @@ footer {
   .special.tablet {
     display: none;
   }
+  .insert p {
+    font-size: 0.8rem;
+  }
+  .insert h2 {
+    font-size: 1.5rem;
+  }
 }
