@@ -1,0 +1,200 @@
+/* set base font size and style */
+html {
+  font-size: 18px;
+}
+
+/* set common properties for page */
+body {
+  display: block;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+/* set properties for banner */
+header {
+  display: block;
+  height: 2.32rem;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  align-items: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.logo img {
+  height: 1.5rem;
+}
+
+.logo span {
+  padding: 0.66rem 0rem 0.66rem 1rem;
+}
+
+/* set properties for main section */
+.main {
+  background-image: url("../../resources/images/moto.jpeg");
+  background-size: cover;
+}
+
+.new {
+  display: flex;
+  height: 25rem;
+}
+
+.insert {
+  display: inline-block;
+  width: 20rem;
+  height: 10rem;
+  padding-left: 3rem;
+  margin-top: 9rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+.insert p {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+.insert h2 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+/* set properties for navigation */
+.categories {
+  display: block;
+  align-items: center;
+  background-color: firebrick;
+  padding: 0.75rem 0rem;
+  width: 100%;
+}
+
+/* .container nav { */
+nav.full {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav.tablet{
+  display: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* set properties for products section */
+.specials {
+  display: block;
+  padding: 3rem 0rem;
+  align-items: center;
+}
+
+.specials .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .special { */
+.special.full {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  justify-content: center;
+  width: 30%;
+}
+
+.special.tablet {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  justify-content: center;
+  width: 30%;
+}
+
+.special-image {
+  display: flex;
+  height: 9rem;
+  padding: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.special-image img {
+  display: flex;
+  max-width: 8rem;
+  align-items: center;
+}
+
+.special span {
+  display: flex;
+  background-color: black;
+  padding: 0.5rem 0rem;
+  color: white;
+  justify-content: center;
+  width: 100%;
+}
+
+/* set properties for store info section */
+.storeinfo {
+  display: block;
+  padding: 3rem 0rem 4rem 0rem;
+}
+
+.storeinfo .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 35%;
+}
+
+.info h5 {
+  background-color: black;
+  color: white;
+  padding: 1rem 0rem 1rem 2rem;
+}
+
+.info p {
+  padding: 0.5rem 0rem;
+}
+
+/* set properties for footer */
+footer {
+  display: block;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 5rem 0rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .special.full {
+    width: 47%;
+  }
+  nav.full {
+    display: none;
+  }
+  nav.tablet {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .special.tablet {
+    display: none;
+  }
+}
