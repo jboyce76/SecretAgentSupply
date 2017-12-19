@@ -41,6 +41,7 @@ header {
 
 /* set properties for main section */
 .main {
+  display: block;
   background-image: url("../../resources/images/moto.jpeg");
   background-size: cover;
 }
@@ -117,7 +118,15 @@ a {
   width: 30%;
 }
 
-.special.tablet {
+.special.watch {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  justify-content: center;
+  width: 30%;
+}
+
+.special.glasses {
   display: flex;
   flex-direction: column;
   border: 4px solid black;
@@ -186,6 +195,9 @@ footer {
   .special.full {
     width: 47%;
   }
+  .special.watch {
+    width: 47%;
+  }
   nav.full {
     display: none;
   }
@@ -194,7 +206,7 @@ footer {
     justify-content: center;
     width: 100%;
   }
-  .special.tablet {
+  .special.glasses {
     display: none;
   }
   .insert p {
@@ -202,5 +214,44 @@ footer {
   }
   .insert h2 {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main {
+    display: inline-block;
+    width: 100%;
+    height: 15rem;
+    flex-direction: column;
+  }
+  .main.container {
+    display: inline-block;
+    width: 100%;
+  }
+  .new {
+    display: relative;
+    width: 100%;
+  }
+  .insert {
+    display: inline-block;
+    margin-top: 10rem;
+    width: 100%;
+    height: 5rem;
+  }
+  .insert p {
+    width: 100%;
+    font-size: 0.77rem;
+  }
+  .insert h2 {
+    font-size: 1rem;
+  }
+  .special.watch {
+    display: none;
+  }
+  .special.full {
+    width: 90%;
+  }
+  .specials .container {
+    justify-content: center;
   }
 }
