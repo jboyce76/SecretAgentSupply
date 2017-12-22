@@ -254,4 +254,19 @@ footer {
   .specials .container {
     justify-content: center;
   }
+  .storeinfo {
+    height: 9rem;
+  }
+  .storeinfo .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .info {
+    width: 90%;
+    padding: 0.25rem 0rem;
+  }
+  footer {
+    display: flex;
+  }
 }
